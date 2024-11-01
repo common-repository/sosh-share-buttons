@@ -1,0 +1,739 @@
+/*****************************************/
+/* General: Fonts
+/*****************************************/
+@font-face {
+    font-family: 'SOSH Social share';
+    src:url('../fonts/sosh.eot?gd6mr8');
+    src:url('../fonts/sosh.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sosh.woff') format('woff'),
+    url('../fonts/sosh.ttf') format('truetype'),
+    url('../fonts/sosh.svg#sosh') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*****************************************/
+/* General: Icons
+/*****************************************/
+.sosh-icon-total-share:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+
+.sosh-icon-total-share:before {
+    font-family: "SOSH Social share";
+    font-style: normal;
+    font-weight: normal;
+
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+}
+
+.sosh-network-btn .sosh-network-icon:before,
+.sosh-network-btn .sosh-network-icon:after {
+    font-family: "SOSH Social share";
+    font-style: normal;
+    font-weight: normal;
+
+    display: block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+.sosh-network-btn .sosh-network-icon:after {
+    margin-left: -20px;
+    opacity: 0;
+}
+
+.sosh-icon-total-share:before { content: '\e883'; }
+
+.sosh-facebook 	  .sosh-network-icon:before,
+.sosh-facebook 	  .sosh-network-icon:after { content: '\e800'; }
+.sosh-twitter 	  .sosh-network-icon:before,
+.sosh-twitter 	  .sosh-network-icon:after { content: '\e801'; }
+.sosh-googleplus   .sosh-network-icon:before,
+.sosh-googleplus   .sosh-network-icon:after { content: '\e802'; }
+.sosh-pinterest   .sosh-network-icon:before,
+.sosh-pinterest   .sosh-network-icon:after { content: '\e803'; }
+.sosh-linkedin 	  .sosh-network-icon:before,
+.sosh-linkedin 	  .sosh-network-icon:after { content: '\e804'; }
+.sosh-whatsapp 	  .sosh-network-icon:before,
+.sosh-whatsapp 	  .sosh-network-icon:after { content: '\e808'; }
+.sosh-email 	  .sosh-network-icon:before,
+.sosh-email 	  .sosh-network-icon:after { content: '\e816'; }
+.sosh-print		  .sosh-network-icon:before,
+.sosh-print		  .sosh-network-icon:after { content: '\e817'; }
+
+/* Button animations */
+.sosh-networks-btns-wrapper.sosh-has-button-icon-animation .sosh-network-btn:hover .sosh-network-icon:before,
+.sosh-networks-btns-wrapper.sosh-has-button-icon-animation .sosh-network-btn:hover .sosh-network-icon:after {
+    transition: all 0.25s ease-in-out;
+}
+
+.sosh-networks-btns-wrapper.sosh-has-button-icon-animation .sosh-network-btn:hover .sosh-network-icon:before {
+    margin-left: 5px;
+    opacity: 0;
+}
+
+.sosh-networks-btns-wrapper.sosh-has-button-icon-animation .sosh-network-btn:hover .sosh-network-icon:after {
+    margin-left: -10px;
+    opacity: 1;
+}
+
+/*****************************************/
+/* Floating Sidebar Buttons
+/*****************************************/
+#sosh-floating-sidebar {
+    position: fixed;
+    top: 30%;
+    z-index: 9998;
+}
+
+#sosh-floating-sidebar.sosh-position-left {
+    left: 0;
+}
+
+#sosh-floating-sidebar.sosh-position-right {
+    right: 0;
+}
+
+.sosh-networks-btns-wrapper.sosh-networks-btns-sidebar li {
+    float: none;
+    margin-left: 0;
+}
+
+.sosh-networks-btns-wrapper.sosh-networks-btns-sidebar .sosh-network-btn {
+    padding: 0;
+    width: 40px;
+}
+
+.sosh-networks-btns-wrapper.sosh-networks-btns-sidebar .sosh-network-btn .sosh-network-icon {
+    border-color: transparent !important;
+    background: transparent !important;
+}
+
+.sosh-networks-btns-wrapper.sosh-networks-btns-sidebar .sosh-network-btn.sosh-has-count .sosh-network-icon {
+    height: 22px;
+    line-height: 22px;
+}
+
+.sosh-button-hover .sosh-networks-btns-wrapper.sosh-networks-btns-sidebar .sosh-network-btn:hover:before {
+    color: #fff;
+}
+
+
+/* Sidebar buttons option - rounded */
+.sosh-shape-rounded .sosh-networks-btns-sidebar .sosh-network-btn,
+.sosh-shape-rounded .sosh-networks-btns-sidebar .sosh-network-btn .sosh-network-icon {
+    border-radius: 0;
+}
+
+.sosh-position-left.sosh-shape-rounded .sosh-networks-btns-sidebar .sosh-network-btn.sosh-first,
+.sosh-position-left.sosh-shape-rounded .sosh-networks-btns-sidebar .sosh-network-btn.sosh-first .sosh-network-icon {
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+}
+
+.sosh-position-left.sosh-shape-rounded .sosh-networks-btns-sidebar .sosh-network-btn.sosh-last,
+.sosh-position-left.sosh-shape-rounded .sosh-networks-btns-sidebar .sosh-network-btn.sosh-last .sosh-network-icon {
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.sosh-position-left.sosh-shape-rounded.sosh-bottom-spacing .sosh-networks-btns-sidebar .sosh-network-btn,
+.sosh-position-left.sosh-shape-rounded.sosh-bottom-spacing .sosh-networks-btns-sidebar .sosh-network-btn .sosh-network-icon {
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.sosh-position-right.sosh-shape-rounded .sosh-networks-btns-sidebar .sosh-network-btn.sosh-first,
+.sosh-position-right.sosh-shape-rounded .sosh-networks-btns-sidebar .sosh-network-btn.sosh-first .sosh-network-icon {
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+}
+
+.sosh-position-right.sosh-shape-rounded .sosh-networks-btns-sidebar .sosh-network-btn.sosh-last,
+.sosh-position-right.sosh-shape-rounded .sosh-networks-btns-sidebar .sosh-network-btn.sosh-last .sosh-network-icon {
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.sosh-position-right.sosh-shape-rounded.sosh-bottom-spacing .sosh-networks-btns-sidebar .sosh-network-btn,
+.sosh-position-right.sosh-shape-rounded.sosh-bottom-spacing .sosh-networks-btns-sidebar .sosh-network-btn .sosh-network-icon {
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.sosh-shape-rounded.sosh-has-spacing .sosh-networks-btns-sidebar .sosh-network-btn .sosh-network-icon {
+    border-radius: 5px;
+}
+
+/* Sidebar buttons option - circle */
+#sosh-floating-sidebar.sosh-position-left.sosh-shape-circle {
+    left: 12px;
+}
+
+#sosh-floating-sidebar.sosh-position-right.sosh-shape-circle {
+    right: 10px;
+}
+
+/* Sidebar buttons bottom spacing */
+.sosh-bottom-spacing .sosh-networks-btns-sidebar .sosh-network-btn {
+    margin-bottom: 6px;
+}
+
+.sosh-shape-rounded.sosh-bottom-spacing .sosh-networks-btns-sidebar .sosh-network-btn {
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/*
+ * Sidebar buttons style 2
+ */
+#sosh-floating-sidebar.sosh-style-2 .sosh-network-btn:before {
+    background: none;
+}
+
+/**
+ * Sidebar button hover label
+ *
+ */
+#sosh-floating-sidebar .sosh-networks-btns-wrapper li { position: relative; overflow: visible; }
+
+#sosh-floating-sidebar .sosh-networks-btns-wrapper .sosh-button-label { position: absolute; z-index: 1; display: inline-block; width: auto; white-space: nowrap; top: 50%; margin-top: -15px; height: 30px; padding: 6px 12px; color: #fff; font-size: 12px; font-weight: normal; line-height: 18px; background: #34495e; border-radius: 3px; visibility: hidden; opacity: 0; transition: all 0.2s ease-in-out; box-sizing: border-box; }
+#sosh-floating-sidebar.sosh-position-left  .sosh-networks-btns-wrapper .sosh-button-label { left: 100%; }
+#sosh-floating-sidebar.sosh-position-right .sosh-networks-btns-wrapper .sosh-button-label { right: 100%; }
+
+#sosh-floating-sidebar.sosh-position-left  .sosh-networks-btns-wrapper li.sosh-hover .sosh-button-label { transform: translateX(10px); visibility: visible; opacity: 1; }
+#sosh-floating-sidebar.sosh-position-right .sosh-networks-btns-wrapper li.sosh-hover .sosh-button-label { transform: translateX(-10px); visibility: visible; opacity: 1; }
+
+#sosh-floating-sidebar .sosh-networks-btns-wrapper .sosh-button-label:before { content: ''; display: block; position: absolute; top: 50%; margin-top: -5px; border-top: 5px solid transparent; border-bottom: 5px solid transparent; }
+#sosh-floating-sidebar.sosh-position-left  .sosh-networks-btns-wrapper .sosh-button-label:before { left: -5px; border-right: 5px solid #34495e; }
+#sosh-floating-sidebar.sosh-position-right .sosh-networks-btns-wrapper .sosh-button-label:before { right: -5px; border-left: 5px solid #34495e; }
+
+
+/*****************************************/
+/* Content Buttons
+/*****************************************/
+#sosh-content-top { margin-bottom: 1.2em; }
+#sosh-content-bottom { margin-top: 1.2em; }
+
+.sosh-share-text { font-weight: bold; margin-bottom: 10px; }
+.sosh-networks-btns-title { font-size: xx-large; color:#7676aa; }
+
+/**************************************************/
+/* General button styling, for content and other
+/**************************************************/
+.sosh-networks-btns-wrapper {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.sosh-networks-btns-wrapper:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.sosh-networks-btns-wrapper li {
+    float: left;
+    overflow: hidden;
+
+    -moz-transition: all 0.15s ease-in;
+    -webkit-transition: all 0.15s ease-in;
+    -o-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;
+
+    list-style-type: none !important;
+}
+
+.sosh-networks-btns-wrapper li:before {
+    display: none !important;
+}
+
+.sosh-networks-btns-wrapper li:first-child {
+    margin-left: 0 !important;
+}
+
+/*
+ * Share button
+ */
+.sosh-networks-btns-wrapper .sosh-network-btn {
+    position: relative;
+
+    display: block;
+    text-decoration: none !important;
+    text-transform: unset !important;
+    height: 40px;
+    min-width: 40px;
+
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 36px;
+    vertical-align: middle;
+
+    padding: 0 10px 0 48px;
+    border: 2px solid;
+    max-height: 40px;
+
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -moz-transition: all 0.15s ease-in;
+    -webkit-transition: all 0.15s ease-in;
+    -o-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;
+
+    box-shadow: none;
+
+    cursor: pointer;
+}
+
+.sosh-networks-btns-wrapper .sosh-network-btn:hover {
+    border: 2px solid;
+    box-shadow: none;
+}
+
+.sosh-networks-btns-wrapper .sosh-network-btn:focus {
+    border: 2px solid;
+    box-shadow: none;
+}
+
+.sosh-networks-btns-wrapper .sosh-network-btn:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+/*
+ * Button icon
+ */
+.sosh-networks-btns-wrapper .sosh-network-btn .sosh-network-icon {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    float: left;
+    display: block;
+    font-size: 14px;
+    line-height: 36px;
+    width: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -moz-transition: all 0.15s ease-in;
+    -webkit-transition: all 0.15s ease-in;
+    -o-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;
+}
+
+
+/*
+ * Buttons with no labels
+ */
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-no-label {
+    padding: 0 18px;
+}
+
+.sosh-button-style-1 .sosh-networks-btns-wrapper .sosh-network-btn.sosh-no-label .sosh-network-icon {
+    width: auto;
+    right: -2px;
+}
+
+
+/*
+ * Button label
+ */
+.sosh-has-buttons-count .sosh-networks-btns-wrapper .sosh-network-label {
+    margin-right: 10px;
+}
+
+.sosh-networks-btns-wrapper .sosh-network-btn .sosh-network-count {
+    font-size: 13px;
+}
+
+.sosh-networks-btns-wrapper.sosh-networks-btns-sidebar .sosh-network-btn .sosh-network-count {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+    font-size: 11px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+}
+
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-no-label .sosh-network-label-wrapper {
+    display: none;
+}
+
+
+/*
+ * Buttons columns
+ */
+.sosh-column-1 .sosh-networks-btns-wrapper li { width: 100%; }
+.sosh-column-1.sosh-has-spacing .sosh-networks-btns-wrapper li { margin-right: 0; }
+
+.sosh-column-2 .sosh-networks-btns-wrapper li { width: 50%; }
+.sosh-column-2.sosh-has-spacing .sosh-networks-btns-wrapper li { width: 49%; }
+.sosh-column-2 .sosh-networks-btns-wrapper li:nth-child(2n) { margin-right: 0; }
+
+.sosh-column-3 .sosh-networks-btns-wrapper li { width: 33.3333%; }
+.sosh-column-3.sosh-has-spacing .sosh-networks-btns-wrapper li { width: 32%; }
+.sosh-column-3 .sosh-networks-btns-wrapper li:nth-child(3n) { margin-right: 0; }
+
+.sosh-column-4 .sosh-networks-btns-wrapper li { width: 25%; }
+.sosh-column-4.sosh-has-spacing .sosh-networks-btns-wrapper li { width: 23.5%; }
+.sosh-column-4 .sosh-networks-btns-wrapper li:nth-child(4n) { margin-right: 0; }
+
+.sosh-column-5 .sosh-networks-btns-wrapper li { width: 20%; }
+.sosh-column-5.sosh-has-spacing .sosh-networks-btns-wrapper li { width: 18.4%; }
+.sosh-column-5 .sosh-networks-btns-wrapper li:nth-child(5n) { margin-right: 0; }
+
+.sosh-column-6 .sosh-networks-btns-wrapper li { width: 16.6666%; }
+.sosh-column-6.sosh-has-spacing .sosh-networks-btns-wrapper li { width: 15%; }
+.sosh-column-6 .sosh-networks-btns-wrapper li:nth-child(6n) { margin-right: 0; }
+
+.sosh-column-2 .sosh-networks-btns-wrapper .sosh-network-btn,
+.sosh-column-3 .sosh-networks-btns-wrapper .sosh-network-btn,
+.sosh-column-4 .sosh-networks-btns-wrapper .sosh-network-btn,
+.sosh-column-5 .sosh-networks-btns-wrapper .sosh-network-btn,
+.sosh-column-6 .sosh-networks-btns-wrapper .sosh-network-btn { padding-right: 10px; }
+
+/*
+ * Buttons width no labels
+ */
+.sosh-no-labels .sosh-networks-btns-wrapper .sosh-network-btn { padding: 0; text-align: center; }
+.sosh-no-labels:not(.sosh-column-auto) .sosh-networks-btns-wrapper .sosh-network-btn:before { position: relative; left: 0; float: none; display: inline-block; }
+
+
+/*
+ * Buttons colors
+ */
+/* Facebook */
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-facebook .sosh-network-icon,
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-facebook {
+    border-color: #3a579a;
+    background: #3a579a;
+    color: #3a579a;
+}
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-facebook:hover .sosh-network-icon,
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-facebook:hover {
+    border-color: #334d87;
+    background: #334d87;
+    color: #334d87;
+}
+
+/* Twitter */
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-twitter .sosh-network-icon,
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-twitter {
+    border-color: #00abf0;
+    background: #00abf0;
+    color: #00abf0;
+}
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-twitter:hover .sosh-network-icon,
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-twitter:hover {
+    border-color: #0099d7;
+    background: #0099d7;
+    color: #0099d7;
+}
+
+/* Google plus */
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-googleplus .sosh-network-icon,
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-googleplus {
+    border-color: #DD4B39;
+    background: #DD4B39;
+    color: #DD4B39;
+}
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-googleplus:hover .sosh-network-icon,
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-googleplus:hover {
+    border-color: #C03221;
+    background: #C03221;
+    color: #C03221;
+}
+
+/* Pinterest */
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-pinterest .sosh-network-icon,
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-pinterest {
+    border-color: #c92228;
+    background: #c92228;
+    color: #c92228;
+}
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-pinterest:hover .sosh-network-icon,
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-pinterest:hover {
+    border-color: #b31e24;
+    background: #b31e24;
+    color: #b31e24;
+}
+
+/* LinkedIn */
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-linkedin .sosh-network-icon,
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-linkedin {
+    border-color: #0077b5;
+    background: #0077b5;
+    color: #0077b5;
+}
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-linkedin:hover .sosh-network-icon,
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-linkedin:hover {
+    border-color: #00669c;
+    background: #00669c;
+    color: #00669c;
+}
+
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-whatsapp .sosh-network-icon,
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-whatsapp {
+    border-color: #25D366;
+    background: #25D366;
+    color: #25D366;
+}
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-whatsapp:hover .sosh-network-icon,
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-whatsapp:hover {
+    border-color: #1EAE54;
+    background: #1EAE54;
+    color: #1EAE54;
+}
+
+/* Email */
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-email .sosh-network-icon,
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-email {
+    border-color: #27ae60;
+    background: #27ae60;
+    color: #27ae60;
+}
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-email:hover .sosh-network-icon,
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-email:hover {
+    border-color: #239e57;
+    background: #239e57;
+    color: #239e57;
+}
+
+/* Print */
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-print .sosh-network-icon,
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-print {
+    border-color: #bdc3c7;
+    background: #bdc3c7;
+    color: #bdc3c7;
+}
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-print:hover .sosh-network-icon,
+.sosh-networks-btns-wrapper .sosh-network-btn.sosh-print:hover {
+    border-color: #afb6bb;
+    background: #afb6bb;
+    color: #afb6bb;
+}
+
+
+/* Sidebar needs color white for icons */
+.sosh-has-button-background .sosh-networks-btns-wrapper.sosh-networks-btns-sidebar .sosh-network-btn:before {
+    color: #fff;
+}
+
+/*
+ * Buttons Shapes
+ */
+.sosh-shape-rounded .sosh-network-btn,
+.sosh-shape-rounded .sosh-network-btn .sosh-network-icon {
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.sosh-shape-rounded .sosh-network-btn,
+.sosh-shape-rounded .sosh-no-label.sosh-network-btn .sosh-network-icon {
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.sosh-shape-circle .sosh-network-btn { border-radius: 30px; }
+.sosh-shape-circle .sosh-network-btn .sosh-network-icon { border-radius: 30px; overflow: hidden; }
+
+/*
+ * Buttons Margins/Spacings
+ */
+.sosh-has-spacing .sosh-networks-btns-wrapper li { margin-bottom: 10px; margin-right: 2%; margin-left: 0 !important; }
+
+
+/*
+ * Buttons on mobile
+ */
+@media screen and ( max-width : 720px ) {
+    .sosh-hide-on-mobile {
+        display: none;
+    }
+}
+
+
+/*****************************************/
+/* Button styles
+/*****************************************/
+
+/*
+ * Buttons Style 1
+ */
+.sosh-button-style-1 .sosh-network-btn { color: #fff !important; padding-left: 38px; }
+.sosh-button-style-1 .sosh-network-btn .sosh-network-icon { color: #fff !important; }
+
+
+/*****************************************/
+/* Total shares
+/*****************************************/
+.sosh-show-total-share-count {
+    position: relative;
+}
+
+.sosh-total-share-wrapper {
+    position: relative;
+    font-family: 'Arial';
+    margin-top: 10px;
+    line-height: 1.345;
+    color: #5d6368;
+}
+
+.sosh-total-share-wrapper .sosh-icon-total-share:before {
+    font-size: 16px;
+    top: 7px;
+    left: -2px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#sosh-floating-sidebar .sosh-total-share-wrapper {
+    margin-bottom: 10px;
+}
+
+#sosh-floating-sidebar .sosh-total-share-wrapper .sosh-icon-total-share {
+    display: none;
+}
+
+.sosh-total-share-wrapper span {
+    display: block;
+    font-size: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sosh-total-share-wrapper .sosh-total-share-count {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.sosh-content-wrapper .sosh-total-share-wrapper {
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    margin-top: -21px;
+    top: 50%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.sosh-content-wrapper.sosh-show-total-share-count.sosh-show-total-share-count-before {
+    padding-left: 70px;
+}
+
+.sosh-content-wrapper.sosh-show-total-share-count.sosh-show-total-share-count-after {
+    padding-right: 70px;
+}
+
+.sosh-content-wrapper.sosh-show-total-share-count.sosh-show-total-share-count-before .sosh-total-share-wrapper {
+    left: 0;
+}
+
+.sosh-content-wrapper.sosh-show-total-share-count.sosh-show-total-share-count-after .sosh-total-share-wrapper {
+    right: 0;
+}
+
+
+@media print {
+
+    #sosh-floating-sidebar,
+    .sosh-share-text,
+    .sosh-content-wrapper { display: none; }
+
+}
+
+/*****************************************/
+/*  Modal
+/*****************************************/
+#sosh_btns_modal  { font-family:Arial,Helvetica,sans-serif!important}
+#sosh_btns_modal p {
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    color:#000 !important; font-size:14px;
+}
+/*
+@media screen and (min-width: 768px) {
+    #sosh_btns_modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+#sosh_btns_modal {
+    text-align: center;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}*/
